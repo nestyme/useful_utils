@@ -1,6 +1,6 @@
 import librosa
 
-#TUA: ffmpeg package must be installed!
+# TUA: ffmpeg package must be installed!
 def ogg_to_wav(ogg_file):
     tmp_audio, sr = librosa.load(ogg_file)
     wavfile = ogg_file.split('.')[0] + '.wav'
