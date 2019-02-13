@@ -36,7 +36,7 @@ def handle_attach (event, vk,keyboard):
                     keyboard = keyboard, 
                     message = 'Recognize')
                     audio_url = event.message_data['attachments'][0]['audio_message']['link_ogg']
-                    audio = urllib.request.urlretrieve(filename="tmp.ogg", url=audio_url)
+                    audio = urllib.request.urlretrieve(filename = "tmp.ogg", url = audio_url)
                     return audio_url
             except KeyError:
                 return 1
